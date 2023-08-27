@@ -124,7 +124,7 @@ function HomePage() {
           actionState={actionState}
           onChangeValue={onChangeLink}
           disableInput={disableInput}
-          disableButton={!link}
+          disableButton={!link || disableButton}
         />
 
         {showReturn ? (
