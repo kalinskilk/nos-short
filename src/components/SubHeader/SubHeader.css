@@ -1,0 +1,13 @@
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

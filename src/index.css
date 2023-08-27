@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+
+:root {
+  /* amber */
+  --amber800: #92400e;
+  --amber900: #78350f;
+  --amber950: #451a03;
+
+  --amber500: #eab308;
+  --amber400: #fbbf24;
+  --amber300: #fcd34d;
+
+  /* zinc */
+  --zinc950: #09090b;
+  --zinc800: #27272a;
+
+  --zinc400: #a1a1aa;
+  --zinc300: #d4d4d8;
+  --zinc200: #e4e4e7;
+  --zinc100: #f4f4f5;
+  --zinc50: #fafafa;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--amber300);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--amber500);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Playfair Display;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+}
+
+.label-subs {
+  font-size: 12px;
+}
+
+.label-pointer {
+  cursor: pointer;
+}
+
+.align-center {
+  justify-content: center;
+  display: flex;
+}
+
+.mt-1 {
+  margin-top: 1%;
+}
+
+.mb-1 {
+  margin-bottom: 1%;
+}

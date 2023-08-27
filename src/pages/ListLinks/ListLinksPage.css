@@ -1,0 +1,40 @@
+.page-container {
+  margin-top: 50px;
+}
+
+.back-links {
+  text-decoration: none;
+  color: #000;
+}
+
+.m-back-links {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.trash-icon {
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  border: 1px;
+  border-radius: 8px;
+  padding: 8px;
+  background: none;
+
+  cursor: pointer;
+}
+
+.img-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.trash-label {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.spinner {
+  border: 5px solid var(--amber300);
+  border-bottom-color: transparent;
+}
