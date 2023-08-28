@@ -5,7 +5,7 @@ export enum ActionPrependEnum {
 }
 
 export enum IconsPrependEnum {
-  SHORT_LINK = "src/assets/icons/Link.svg",
-  COPY_LINK = "src/assets/icons/ClipBoard.svg",
-  SUCCESS_LINK = "src/assets/icons/Check.svg",
+  SHORT_LINK = "public/icons/Link.svg",
+  COPY_LINK = "public/icons/ClipBoard.svg",
+  SUCCESS_LINK = "public/icons/Check.svg",
 }
