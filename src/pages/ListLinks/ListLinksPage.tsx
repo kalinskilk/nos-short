@@ -138,7 +138,7 @@ function ListLinksPage() {
                       key={`btn-${key}`}
                     >
                       <img
-                        src="public/icons/Trash.svg"
+                        src="../../assets/icons/Trash.svg"
                         className="img-icon"
                         alt="icon action"
                         key={`trash-${key}`}

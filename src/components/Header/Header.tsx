@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <header>
-        <img src="public/icons/Logo.svg" alt="nós.short logo icon" />
+        <img src="../../assets/icons/Logo.svg" alt="nós.short logo icon" />
       </header>
     </>
   );
