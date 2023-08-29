@@ -1,41 +1,10 @@
 # nós.short React + TypeScript + Vite
 
-<!-- TODO -->
+## O que é isso?
 
-[x] INPUT FOCUSED BORDER REMOVE
+Uma aplicação de desafio para o processo seletivo do NOS - Nosso Olhar Solidário utilizando React + TypeScript + Vite.
 
-[x] VERCEL
-
-[x] CYPRESS TEST INTEGRATION
-
-[] circle ci
-
-[x] GIT
-
-[x] COMP SPINNER
-
-[x] destroy link
-
-[x] listar link
-
-[x] ver responsividade
-
-[] arrumar readme
-
-<!-- ## CI/CD -->
-
-<!-- <p>
-  <a href="https://circleci.com/gh/kalinskilk/workflows/ng-planning-poker/tree/main">
-    <img src="https://circleci.com/gh/kalinskilk/ng-planning-poker.svg?style=shield" alt="CI status" />
-  </a>&nbsp;
-</p>
- -->
-
-# O que é isso?
-
-Uma aplicação de desafio para o processo seletivo do NOS - Nosso Olhar Solidario utilizando React + TypeScript + Vite.
-
-# Demonstração
+## Demonstração
 
 Acesse: https://nos-short.vercel.app/
 
@@ -45,7 +14,7 @@ Acesse: https://nos-short.vercel.app/
 
 </a>
 
-# Como usar
+## Como usar
 
 - Instale as depencias utilizado `npm install` ou `yarn install`
 
@@ -53,11 +22,9 @@ Acesse: https://nos-short.vercel.app/
 
 - Acesse: <a href="http://localhost:5173" rel="some text">http://localhost:5173</a>
 
-# Como funciona?
+## Desafios Resolvidos:
 
-- Para construir utilize `npm run build` ou `yarn build`
-
-# Desafios Resolvidos:
+O funcionamento dos desafio podem ser verificados via testes e2e com cypress. A seguir os desafios que foram resolvidos.
 
 [x] Desafio 1
 
@@ -98,11 +65,11 @@ segundos restantes para um link expirar
 
 ### Obs:
 
-- As análise a cima foram feitas em produção via vercel.
+- As análises a cima foram feitas em produção via vercel.
 
 ## Testes e2e
 
-Foi desenvolvido testes e2e com cypress.
+A fim de garantir cobertura de testes foi desenvolvido testes e2e com cypress.
 
 - Rode o cypress em modo dev: `yarn run cy:e2e` ou `npm run cy:e2e`
 
