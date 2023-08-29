@@ -71,7 +71,7 @@ function HomePage() {
         ttl: 60 * 60 * 24 * 7, // 604800 uma semana
         message: "",
       });
-
+      console.log(newLink);
       setLink(newLink.link_url);
 
       setIcon(IconsPrependEnum.COPY_LINK);
@@ -87,7 +87,7 @@ function HomePage() {
       const msg =
         error?.message || "Falha ao encurtar o link. Tente novamente.";
       ToastService.toastError({ message: msg });
-      throw new Error(msg);
+      console.error(msg);
     }
   };
 

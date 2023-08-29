@@ -94,8 +94,16 @@ function ListLinksPage() {
       });
 
       updateLinks(getLinks());
-    } catch (error) {
-      console.log(error);
+    } catch (error: any) {
+      ToastService.toastError({ message: error.message });
+      item.removing = false;
+
+      links.forEach((el) => {
+        if (el.key === item.key) {
+          item.removing = false;
+        }
+      });
+      updateLinks(links);
     }
   };
 
