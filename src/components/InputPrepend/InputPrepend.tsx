@@ -12,6 +12,7 @@ interface InputPrependProps {
   link: string;
   onChangeValue: Function;
   children?: any;
+  hiddenInput: boolean;
 }
 
 function InputPrepend(props: InputPrependProps) {
@@ -28,15 +29,21 @@ function InputPrepend(props: InputPrependProps) {
       <div>
         {props.children}
         <div className="prepend-container align-center">
-          <input
-            type="url"
-            placeholder="Insira um link para encurtar..."
-            disabled={props.disableInput}
-            value={props.link}
-            onChange={onChangeValue}
-            aria-label="Insira um link para encurtar..."
-            aria-required="true"
-          />
+          {!props.hiddenInput ? (
+            <input
+              type="url"
+              placeholder="Insira um link para encurtar..."
+              disabled={props.disableInput}
+              value={props.link}
+              onChange={onChangeValue}
+              aria-label="Insira um link para encurtar..."
+              aria-required="true"
+            />
+          ) : (
+            <div className="div-label-prepend">
+              <label className="label-prepend">{props.link}</label>
+            </div>
+          )}
 
           <button
             className="btn-icon"

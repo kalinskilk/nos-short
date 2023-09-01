@@ -1,13 +1,18 @@
 import { useCountdown } from "../../services/CountDown.service";
 import "./LinkDetails.css";
 
-function LinkDetails(props: { url: string; dateExpires: string }) {
+function LinkDetails(props: {
+  url: string;
+  dateExpires: string;
+  removeLinkExpired: Function;
+}) {
   const [days, hours, minutes, seconds] = useCountdown(props.dateExpires);
 
   const timeExpires = () => {
     let str = ``;
     if (days + hours + minutes + seconds <= 0) {
       str = "Link expirado";
+      props.removeLinkExpired();
       return str;
     }
     if (days) {

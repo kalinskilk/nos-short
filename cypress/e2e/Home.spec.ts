@@ -62,7 +62,7 @@ describe("HomeWorks", () => {
     cy.get(".btn-icon").click();
     cy.get(".spinner").should("be.visible");
     cy.wait("@short-link");
-    cy.get("input").should("have.value", "https://url.dev/vFbvj96/");
+    cy.get(".label-prepend").should("have.text", "https://url.dev/vFbvj96/");
 
     cy.get(".btn-icon")
       .find("img")

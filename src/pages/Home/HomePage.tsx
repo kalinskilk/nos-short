@@ -18,6 +18,7 @@ function HomePage() {
   const [disableButton, setDisableButton] = useState(false);
   const [disableInput, setDisableInput] = useState(false);
   const [showReturn, setShowReturn] = useState(false);
+  const [hiddenInput, setHiddenInput] = useState(false);
 
   const validationsLink = () => {
     if (!link.length) {
@@ -79,6 +80,7 @@ function HomePage() {
       setLoading(false);
       setDisableButton(false);
       setShowReturn(true);
+      setHiddenInput(true);
     } catch (error: any) {
       setLoading(false);
 
@@ -111,6 +113,7 @@ function HomePage() {
     setDisableInput(false);
 
     setLink("");
+    setHiddenInput(false);
   };
 
   return (
@@ -125,6 +128,7 @@ function HomePage() {
           onChangeValue={onChangeLink}
           disableInput={disableInput}
           disableButton={!link || disableButton}
+          hiddenInput={hiddenInput}
         />
 
         {showReturn ? (

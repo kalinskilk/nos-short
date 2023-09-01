@@ -107,6 +107,10 @@ function ListLinksPage() {
     }
   };
 
+  const removeLinkExpired = async (item: ListLinks) => {
+    await onDestroyLink(item);
+  };
+
   return (
     <>
       <div>
@@ -126,12 +130,14 @@ function ListLinksPage() {
                   disableInput={true}
                   disableButton={false}
                   key={`link-${item.key}-${key}`}
+                  hiddenInput={true}
                 >
                   <div className="align-center mb-1">
                     <LinkDetails
                       dateExpires={item.dateExpires}
                       url={item.url}
                       key={`link-details-${item.key}-${key}`}
+                      removeLinkExpired={() => removeLinkExpired(item)}
                     ></LinkDetails>
                   </div>
                 </InputPrepend>
@@ -162,7 +168,10 @@ function ListLinksPage() {
                   </>
                 ) : (
                   <>
-                    <Spinner loading={item.removing || false}></Spinner>
+                    <Spinner
+                      loading={item.removing || false}
+                      key={`spinner-removing-${key}`}
+                    ></Spinner>
                   </>
                 )}
               </div>

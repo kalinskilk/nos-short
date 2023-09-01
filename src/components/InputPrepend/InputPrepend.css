@@ -60,6 +60,19 @@ input:focus {
   animation: rotation 1s linear infinite;
 }
 
+.div-label-prepend {
+  height: 46px;
+  border-radius: 8px;
+  border: 2px solid #d4d4d8;
+  padding: 0px 24px 0px 24px;
+  color: #a1a1aa;
+}
+
+.label-prepend {
+  margin-top: 11px;
+  display: inline-block;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -70,25 +83,29 @@ input:focus {
 }
 
 @media (min-width: 320px) {
-  input {
+  input,
+  .div-label-prepend {
     width: 60%;
   }
 }
 
 @media (min-width: 480px) {
-  input {
+  input,
+  .div-label-prepend {
     width: 60%;
   }
 }
 
 @media (min-width: 801px) {
-  input {
+  input,
+  .div-label-prepend {
     width: 45%;
   }
 }
 
 @media (min-width: 1025px) {
-  input {
+  input,
+  .div-label-prepend {
     width: 25%;
   }
 }
